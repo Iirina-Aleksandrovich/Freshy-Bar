@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- обозначение языка на сайте -->
+<html lang="ru"> 
+
+<!-- Элемент head представляет собой набор метаданных для документа. -->
+<head>
+    <!-- UTF-8 кодировка символов -->
+    <meta charset="UTF-8">
+    <!-- Viewport - это видимая пользователю область веб-страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Наименование шапки сайта -->
+    <title>Freshy Bar</title>
+    <!-- привязка шрифты к сайту и ссылка на их нахождение -->
+    <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- иконка шапки сайта -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- привязка стилей к сайту и ссылка на их нахождение-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- сброс стандартных данных на сайте и ссылка на их нахождение -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- привязка скриптов к сайту и ссылка на их нахождение -->
+    <script> src="js/script.js" </script>
+</head>
+
+<body>
+
+    <!-- голова (меню) сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- лого сайта -->
+            <img class="header__logo" src="img/logo.svg"
+            alt="Логотип Freshy Bar">
+            <!-- кнопка в виде корзины -->
+            <div class="header__btns">
+                <button class="header__btn-order">
+                <img src="img/bag.svg" alt="Корзина">
+                </button>
+            <!-- кнопка 'Заказать' с ссылкой для переход на другую страницу (раздел) -->
+            <a href="#goods" class="btn header__btn">Заказать</a></div>
+        </div>
+    </header>
+
+    <!-- основная часть сайта -->
+    <main>
+        <!-- первый раздел, тот что видит пользователь по переходу на сайт -->
+        <section class="hero">
+            <div class="container">
+                <!-- Главный заголовок сайта -->
+                <h2 class="hero__title">Выбери свой <span class="text-red">освежающий</span> фреш
+                </h2>
+
+                <!-- карточки в 1 разделе -->
+                <div class="hero__cups">
+                    <!--hero__cup-pink - класс фона-->
+                    <div class="hero__cup hero__cup-pink">
+                        <!-- картинка стакана -->
+                        <img src="img/pink.png"
+                        alt="Стакан с розовым коктейлем" class="hero__img">
+                    </div>
+
+                    <!--hero__cup-orange - класс фона-->
+                    <div class="hero__cup hero__cup-orange">
+                        <!-- картинка стакана -->
+                        <img src="img/green.png"
+                        alt="Стакан с зеленым коктейлем" class="hero__img">
+                    </div>
+
+                    <!--hero__cup-green - класс фона-->
+                    <div class="hero__cup hero__cup-green">
+                        <!-- картинка стакана -->
+                        <img src="img/orange.png"
+                        alt="Стакан с оранжевым коктейлем" class="hero__img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Второй раздел -->
+        <!-- id для перехода на данный раздел -->
+        <section class="goods" id="goods">
+            <div class="container">
+                <!-- наименование 2 раздела -->
+                <h2 class="goods__title">Меню</h2>
+                <ul class="goods__list">
+<!--Коктейль собери сам-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/make_your_own.png" alt="Коктейль собери сам" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Собери сам</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">260 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить
+                                </button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с клубникой-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/strawberry.png" alt="Коктейль с клубникой" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Клубника</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">270 ₽
+                                    </p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с лесные ягоды-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/berries.png" alt="Коктейль С ЛЕСНЫМИ ЯГОДАМИ" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Лесные ягоды</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">280 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с Лайм и мята-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/lime_and_mint.png" alt="Коктейль с лаймом и мятой" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Лайм и мята</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">260 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с Бананом-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/banana.png" alt="Коктейль с бананом" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Банан</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">260 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с Киви и яблоко-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/kiwi_and_apple.png" alt="Коктейль с киви и яблоком" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">
+                                        Киви и яблоко</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">290 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>                                    
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с Манго-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/mango.png" alt="Коктейль с манго" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Манго</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">380 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+<!--Коктейль с Маракуйя-->
+                    <li class="goods__item">
+                        <article class="goods__card cocktail">
+                            <!-- картинка коктейля -->
+                            <img src="img/passio_fruit.png" alt="Коктейль смаракуей" class="cocktail__img">
+                            <!-- описание таблички -->
+                            <div class="cocktail__content">
+                                <div class="cocktail__text">
+                                    <!-- наименование коктейля -->
+                                    <h3 class="cocktail__title">Маракуйя</h3>
+                                    <!-- цена коктейля -->
+                                    <p class="cocktail__price text-red">340 ₽</p>
+                                    <!-- граммовки -->
+                                    <p class="cocktail__size">300мл</p>
+                                </div>
+                                    <!-- кнопка 'Добавить' -->
+                                <button class="btn cocktail__btn">Добавить</button>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- окончание сайта -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <!-- лого -->
+            <img src="img/logo.svg" alt="Логотип Freshy Bar" class="footer__logo">
+            <!-- данные -->
+            <p class="footer__copyright">© Freshy Bar, 2023</p>
+            <!-- дизайнер и разработчик -->
+            <ul class="footer__developer">
+                <!-- ссылка на дизайнера -->
+                <li class="footer__developer-item">Designer:
+                    <a href="https://t.me/Mrshmallowww" class="footer__developer-link">Anastasia Ilina</a>
+                </li>
+                <!-- ссылка на разработтчика -->
+                <li class="footer__developer-item">Developer:
+                    <a href="https://t.me/Irina_Aleksandrovich" class="footer__developer-link">Irina Aleksandrovich</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
