@@ -469,5 +469,4 @@ hi, h2, h3, p, fieldset {
         grid-template-areas: 'logo' 'copyright' 'developer';
         gap: 20px;
     }
-
 }
