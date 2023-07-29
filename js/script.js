@@ -1,7 +1,8 @@
 const API_URL = "https://decisive-groovy-cornflower.glitch.me/";
 
 const getData = () => {
-    const response = fetch(API_URL + "/api/goods")
+    const response = fetch(API_URL + "api/goods");
+    
 }
 
 const init = () => {
